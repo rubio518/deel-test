@@ -1,0 +1,30 @@
+### get single contract
+GET http://localhost:3001/contracts/1
+profile_id: 5
+
+### get all in_progress contracts
+GET http://localhost:3001/contracts
+profile_id: 5
+
+### get all unpad jobs for user
+GET http://localhost:3001/jobs/unpaid
+profile_id: 1
+
+###
+POST http://localhost:3001/jobs/3/pay
+profile_id: 3
+
+###
+POST http://localhost:3001/balances/deposit/1
+profile_id: 1
+content-type: application/json
+
+{
+  "amount": 100
+}
+
+### 
+GET http://localhost:3001/admin/best-profession?start=2020-08-16T00:27:12.506Z&end=2022-08-16T10:27:12.506Z
+
+###
+GET http://localhost:3001/admin/best-clients?start=2020-08-10T00:27:12.506Z&end=2022-08-16T10:27:12.506Z&limit=3

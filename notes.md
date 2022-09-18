@@ -1,0 +1,6 @@
+- split models into separated files
+- split routes into files
+- consistency --> move to camelCase
+- admin routes authentication?
+- some parameters in routes are in snake_case others in camelCase
+- pay added validation, client can only pay if they are part of the contract
